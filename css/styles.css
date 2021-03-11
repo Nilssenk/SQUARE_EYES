@@ -4,8 +4,12 @@ body {
   color: #fff;
 }
 
+.header_line {
+  float: right;
+}
+
 nav ul {
-  padding: 10px;
+  padding: 5px;
 }
 
 nav li {
@@ -16,18 +20,22 @@ nav li {
 
 .producer {
   color: #f77335;
+  display: inline-block;
 }
 
 .watcher {
   color: #7aa178;
+  display: inline-block;
 }
 
 .logo {
   align-items: center;
+  display: inline-block;
 }
 
 .home {
   text-transform: uppercase;
+  display: inline-block;
   padding: 10px 80px;
 }
 
@@ -57,14 +65,20 @@ a {
   border-radius: 5px;
 }
 
+.cta_create {
+  text-align: center;
+  background-color: #f77335;
+}
+
 .active  {
   text-decoration: underline;
 }
 
 .featured_movies {
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
 }
 
 .intro {
