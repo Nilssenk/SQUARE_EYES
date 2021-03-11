@@ -5,7 +5,10 @@ body {
 }
 
 .header_line {
-  float: right;
+  display: inline-block;
+  flex: 1;
+  padding: 10;
+  margin: 10;
 }
 
 nav ul {
@@ -14,28 +17,23 @@ nav ul {
 
 nav li {
   color: #fff;
-  display: inline-block;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .producer {
   color: #f77335;
-  display: inline-block;
 }
 
 .watcher {
   color: #7aa178;
-  display: inline-block;
 }
 
 .logo {
-  align-items: center;
-  display: inline-block;
 }
 
 .home {
   text-transform: uppercase;
-  display: inline-block;
   padding: 10px 80px;
 }
 
@@ -49,6 +47,39 @@ footer {
 header a {
   color: #fff;
   padding: 2px;
+}
+
+.intro {
+  text-align: center;
+}
+
+h2 {
+  color: #f77335;
+  text-transform: uppercase;
+}
+
+p {
+  color: #fff;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.item {
+  max-width: 150px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.floated {
+  float: right;
+}
+
+.item_box {
+  background-color: #696565;
+  width: 200px;
+  height: 300px;
 }
 
 /*Links*/
@@ -65,22 +96,28 @@ a {
   border-radius: 5px;
 }
 
+.featured_movies {
+  border-radius: 10%;
+  padding: 10px;
+  width: 220px;
+  height: 150px;
+}
+
+.position {
+  border-radius: 10px;
+  text-align: center;
+}
+
 .cta_create {
   text-align: center;
   background-color: #f77335;
+  position: absolute;
+}
+section::after {
+  content: "";
+  clear: both;
 }
 
 .active  {
   text-decoration: underline;
-}
-
-.featured_movies {
-  border-radius: 10px;
-  padding: 10px;
-  width: 250px;
-  height: 150px;
-}
-
-.intro {
-  text-align: center;
 }
