@@ -1,18 +1,15 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background-color: #000000;
   color: #fff;
 }
 
 nav {
-  margin-left: 10px;
+  display: flex;
 }
 
-.header_line {
-  display: inline-block;
-  flex: 1;
-  padding: 10;
-  margin: 10;
+.nav_menu {
+  flex: 4;
 }
 
 nav ul {
@@ -20,7 +17,6 @@ nav ul {
 }
 
 nav li {
-  color: #fff;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -33,102 +29,182 @@ nav li {
   color: #7aa178;
 }
 
-.logo {
-  text-align: center;
-  margin: auto 200px;
+.home {
+  padding: 10px 80px;
+  color: #fff;
 }
 
-.home {
-  text-transform: uppercase;
-  padding: 10px 80px;
+.toolbar {
+  display: flex;
+  flex: 4;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+}
+
+.login_button {
+  flex: 7;
+}
+
+.tools {
+  flex: 2;
+  margin-right: 12px;
+}
+
+.tools a {
+  margin-right: 15px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  text-align: center;
+}
+
+.icon_img {
+  height: 25px;
+}
+
+.icon_header {
+  flex: 6;
 }
 
 header,
 footer {
   background-color: #272726;
-  color: #fff;
-  padding: 15px;
-}
-
-header a {
-  color: #fff;
-  padding: 2px;
 }
 
 /*HOME PAGE*/
 
-.intro {
+h2 {
+  color: #f77335;
+  font-size: 1em;
+  text-transform: uppercase;
   text-align: center;
 }
 
-h2 {
-  color: #f77335;
-  text-transform: uppercase;
-}
-
 p {
-  color: #fff;
+  text-align: center;
 }
 
 h3 {
   text-transform: uppercase;
+  text-align: left;
+  margin: 10px 5px 10px 40px;
+}
+.intro {
+  text-align: center;
+  flex: 8;
 }
 
-.item {
-  position: relative;
-  top: 10px;
-  right: 200px;
-  max-width: 150px;
-  padding: 10px;
-  margin: 10px;
+.intro h1 {
+  font-style: italic;
+  font-size: 0.5em;
 }
 
-.floated {
+.left-column {
+  width: 60%;
+  float: left;
+  border-right-style: solid;
+  border-color: #f77335;
+}
+
+.right-column {
+  width: 38%;
   float: right;
 }
 
-.item_box {
-  background-color: #696565;
-  width: 200px;
-  height: 300px;
+.create-account-section {
+  width: 100%;
+  float: right;
 }
 
-/*Links*/
-a {
-  text-decoration: none;
+.financial-benefits {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cta {
-  background-color: #7aa178;
-  color: #fff;
-  font-size: 1em;
-  text-transform: uppercase;
-  padding: 5px 50px;
-  border-radius: 5px;
+.financial-benefits h2 {
+  margin-top: 35px;
 }
 
 .featured_movies {
-  border-radius: 10%;
+  border-radius: 20%;
   padding: 10px;
   width: 220px;
   height: 150px;
 }
 
-.position {
+.movie_upload {
+  margin-top: 80px;
+}
+
+.create-account {
   border-radius: 10px;
   text-align: center;
+  margin-top: 50px;
+}
+
+.uploader {
+  background-color: rgba(105, 101, 101, 0.3);
+  width: 300px;
+  height: 360px;
+  border-radius: 22%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.uploader p {
+  position: relative;
+  top: 40px;
+  padding: 40px;
+}
+
+footer {
+  width: 100%;
+  float: right;
+  height: 50px;
+  text-align: center;
+}
+
+footer div {
+  margin: 17px;
+}
+
+footer a {
+  margin: 5%;
+}
+
+/*Links*/
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cta {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 85px;
+  border-radius: 5px;
 }
 
 .cta_create {
   text-align: center;
   background-color: #f77335;
-  position: absolute;
 }
+
+.cta_login {
+  background-color: #7aa178;
+}
+
 section::after {
   content: "";
   clear: both;
 }
 
-.active  {
+a:active {
   text-decoration: underline;
 }

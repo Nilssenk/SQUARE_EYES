@@ -8,68 +8,86 @@
     </head>
     <body>
         <header>
-            <div class="nav_list"> 
             <nav>
+            <div  class="nav_menu">
                 <ul>
-                    <li><a href="index.html" class="active home header_line">Home</a></li>
-                    <li><a href="producer.html" class="producer header_line">Producer</li>
-                    <li><a href="watcher.html" class="watcher header_line">Watcher</li>
-                    <li><img src="images/logo_white.png" alt="logo" width="100" height="50" class="logo header_line">  
-                        <a href ="index.html">
-                     </a>
-                    </li>
-                    <li><a href="login.html" class="cta header_line">login</a></li>
+                    <li><a href="index.html" class="home"><img class="icon_img" src="icon/clapper_home.png">Home<a><li>
+                    <li><a href="producer.html" class="producer">Producer</a></li>
+                    <li><a href="watcher.html" class="watcher">Watcher</a></li>
+                     
                 </ul>
-            </nav>
             </div>
+            <div class="logo">
+                <a href ="index.html"> 
+                    <img src="images/logo_white.png" alt="logo white" width="150" height="80"> </a>
+            </div>
+            <div class="toolbar">
+                <div class="login_button">
+                    <a href="login.html" class="cta cta_login">login</a>
+                </div>
+                <div class="tools">
+                    <a href="index.html">
+                    <img class="icon_img" src="icon/login_icon.png"></a>
+                <a href="index.html">
+                    <img class="icon_img" src="icon/search.png"></a>
+                </div>
+            </div>
+        </nav>
         </header>
         <main>
             <section class="intro">
                 <h1>Supporting small filmmakers and discovering interesting films.</h1>
             </section>
-            <section>
-                <h3>Favourites</h3>
+            <section class="left-column">
                 <div>
+                    <h3>Favourites</h3>
                     <img src="images/Summer93_mov.jpg" alt="Summer93"  class="featured_movies"/>
                     <img src="images/nice_mov.jpg" alt="nice" class="featured_movies"/>
-                    <img src="images/why_mov.jpg" alt="nice" class="featured_movies"/>
+                    <img src="images/why_mov.jpg" alt="why" class="featured_movies"/>
                 </div>
-            </section>
-            <section class="item floated">
-                    <h2>Financially Benefit</h2>
-                    <p>from the films you've produced.</p>
-                    <h2>A Wider Reach</h2>
-                    <p>for people that's geuinely interested in your movies.</p>
-            </section>
-            <section>
-                <h3>Newly Uploaded</h3>
                 <div>
+                    <h3>Newly Uploaded</h3>
                     <img src="images/girls_at_sea_mov.jpg" alt="Girls At Sea" class="featured_movies"/>
                     <img src="images/north_mov.jpg" alt="nice" class="featured_movies"/>
                     <img src="images/pasient_mov.jpg" alt="nice" class="featured_movies"/>
                 </div>
-            
-            <section class="item floated item_box">
-                    <p>As a producer you can upload your movie here</p>
-            </section>
-            </section>
-            <section>
-                <h3>Popular now</h3>
                 <div>
+                    <h3>Popular now</h3>
                     <img src="images/the_city_mov.jpg" alt="The City" class="featured_movies"/>
                     <img src="images/movie-918655_1920.jpg" alt="nice" class="featured_movies"/>
-                    <img src="images/boat_mov.jpg" alt="nice" class="featured_movies"/>
+                    <img src="images/boat_mov.jpg" alt="boat" class="featured_movies"/>
                 </div>
-            </section>
-            <section>
-                <div class="position">
-                  <a href="create.html" class="cta cta_create">Create Account</a>
+        </section>
+        <section class="right-column">
+                <div class="financial-benefits">
+                    <h2>Financially Benefit</h2>
+                    <p>from the films you've produced.</p>
+                    <h2>A Wider Reach</h2>
+                    <p>for people that's geuinely interested in your movies.</p>
                 </div>
+                <div class="movie_upload">
+                    <div class="uploader">
+                    <p>As a producer you can upload your movie here</p>
+                    <a href="index.html"><img src="icon/upload.png"></a>
+                </div>
+                </div>
+        </section>
+            <section class="create-account-section">
+                <div class="create-account">
+                    <a href="create.html" class="cta cta_create">Create Account</a>
+                  </div>
+                <div>
+                    <a href="index.html">
+                     <img src="images/logo_grey.png" alt="grey logo" width="80" height="50">
+                    </a>
+                </div>  
             </section>
         </main>
         <footer>
+            <div>
             <a href="settings.html">Settings</a>
             <a href="contact.html">Contact us</a>
+        </div>
         </footer>
     </body>
 </html>
