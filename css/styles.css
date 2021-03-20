@@ -7,6 +7,24 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #000000;
   color: #fff;
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
 }
 
 nav {
@@ -96,7 +114,7 @@ p {
 h3 {
   text-transform: uppercase;
   text-align: left;
-  margin: 10px 5px 10px 40px;
+  margin: 10px 5px 10px 75px;
 }
 .intro {
   text-align: center;
@@ -108,6 +126,7 @@ h3 {
 }
 
 .left-column {
+  text-align: center;
   width: 60%;
   float: left;
   border-right-style: solid;
@@ -211,4 +230,22 @@ section::after {
 
 a:active {
   text-decoration: underline;
+}
+
+/*media query*/
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 900px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .left-column {
+    width: 100%;
+  }
+
+  .right-column {
+    width: 100%;
+  }
 }
